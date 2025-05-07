@@ -1,0 +1,119 @@
+@import "beimo.css";
+
+* {
+    font-family: "Font Awesome", "Maple Mono Normal NF", sans-serif;
+    font-size: 13px;
+    padding: 0px;
+}
+
+#waybar {
+    background: transparent;
+}
+
+.modules-left,
+.modules-center,
+.modules-right {
+    background-color: @bg;
+    border: 2px solid @border;
+    border-radius: 1rem;
+}
+
+.modules-left {
+    border-top-color: @border-left;
+    box-shadow: 0 0 6px @border-left;
+    padding: 0px 10px;
+}
+
+.modules-center {
+    border-top-color: @border-center;
+    box-shadow: 0 0 6px @border-center;
+    padding: 0px 10px 3px;
+}
+
+.modules-right {
+    border-top-color: @border-right;
+    box-shadow: 0 0 6px @border-right;
+    padding: 0px 10px 3px;
+}
+
+
+#workspaces button {
+    color: @text;
+    border-radius: 1rem;
+    padding: 0px 8px;
+    transition: padding 0.5s ease-in-out;
+}
+
+#workspaces button.active {
+    font-weight: bold;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: @border-center;
+    color: @border-center;
+    padding: 0px 20px;
+    border-radius: 5px;
+}
+
+#workspaces button:hover {
+    box-shadow: inherit;
+    text-shadow: inherit;
+    border-radius: 4px;
+    border-color: @bg;
+    color: @border-center;
+    background: transparent;
+}
+
+#info,
+#tools,
+#settings,
+#memory,
+#cpu,
+#clock {
+    color: @text;
+    background: transparent;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+#info {
+    border-bottom-color: @right-info;
+    padding: 0px 0px 0px 2px;
+}
+
+#network.disabled {
+    border-bottom-color: #ff0000;
+}
+
+#network.disconnected {
+    border-bottom-color: #ffff00;
+}
+
+#tools{
+    border-bottom-color: @right-tools;
+    padding: 0px 2px;
+}
+
+#settings{
+    border-bottom-color: @right-settings;
+    padding: 0px 4px 0px 0px;
+}
+
+#memory {
+    border-bottom-color: @right-memory;
+    padding: 0px 5px;
+}
+
+#cpu {
+    border-bottom-color: @right-cpu;
+    padding: 0px 5px;
+}
+
+#clock {
+    border-bottom-color: @right-clock;
+    padding: 0px 5px;
+}
+
+#custom-power {
+    color: @text;
+    background: transparent;
+}

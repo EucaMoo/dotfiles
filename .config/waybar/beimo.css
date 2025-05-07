@@ -1,0 +1,15 @@
+@define-color   text rgba(240, 255, 255, 0.9);
+
+@define-color   bg rgba(13, 38, 48, 0.85);
+@define-color   border rgba(156, 177 , 170, 0.9);
+@define-color   border-left rgba(80, 97, 199, 0.9);
+@define-color   border-center rgba(169, 103 , 195, 0.9);
+@define-color   border-right rgba(242, 143 , 173, 0.9);
+
+@define-color   right-info rgba(51, 253, 255, 0.9);
+@define-color   right-tools rgba(88, 255, 51, 0.9);
+@define-color   right-settings rgba(217, 51, 255, 0.9);
+@define-color   right-memeory rgba(232, 255, 51, 0.9);
+@define-color   right-cpu rgba(255, 136, 51, 0.9);
+@define-color   right-clock rgba(213, 145, 195, 0.9);
+@define-color   ri #ffffff;

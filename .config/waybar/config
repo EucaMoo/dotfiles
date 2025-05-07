@@ -1,0 +1,176 @@
+{
+    "layer": "top",
+    "position": "top",
+    "mod": "dock",
+    "spacing": 8,
+    "margin-top": 2,
+    "margin-left": 5,
+    "margin-bottom": 2,
+    "margin-right": 5,
+
+    "modules-left": [
+        "tray"
+    ],
+
+    "modules-center": [
+        "hyprland/workspaces"
+    ],
+
+    "modules-right": [
+        "group/info",
+        "group/tools",
+        "group/settings",
+        "memory",
+        "cpu",
+        "clock",
+        "custom/power"
+    ],
+
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "on-click": "activate",
+        "all-outputs": true,
+        "sort-by-number": true,
+        "format-icons": {
+            "1": "一",
+            "2": "二",
+            "3": "三",
+            "4": "四",
+            "5": "五",
+            "6": "六",
+            "7": "七",
+            "8": "八",
+            "9": "九",
+            "10": "十",
+            "urgent": " 󰀨 ",
+            "active": " 󰮯 ",
+            "default": " 󰑊 "
+        },
+        "persistent-workspaces": {
+            "*": 5
+        }
+    },
+
+    "tray": {
+        "icon-size": 21,
+        "spacing": 10
+    },
+
+    "group/info": {
+        "orientation": "inherit",
+        "drawer": {
+            "children-class": "info",
+            "transition-duration": 500,
+            "transition-left-to-right": false,
+            "click-to-reveal": true
+        },
+        "modules": [
+            "network",
+            "disk"
+        ]
+    },
+
+    "network": {
+        "interval": 1,
+        "family": "ipv4",
+        "format-disconnected": "  ",
+        "format-disabled": "  ",
+        "format-wifi": "{bandwidthTotalBytes}",
+        "format-ethernet": "{bandwidthTotalBytes}",
+        "format-linked": "{bandwidthTotalBytes}",
+        "tooltip": false
+    },
+
+    "disk": {
+        "interval": 30,
+        "format": "@:{percentage_free}% ",
+        "path": "/",
+        "unit": "GB"
+    },
+
+    "group/tools": {
+        "orientation": "inherit",
+        "drawer": {
+            "children-class": "tools",
+            "transition-duration": 500,
+            "transition-left-to-right": false,
+            "click-to-reveal": true
+        },
+        "modules": [
+            "custom/tools"
+        ]
+    },
+
+    "custom/tools": {
+        "format": "  ",
+        "tooltip": false,
+    },
+
+    "group/settings": {
+        "orientation": "inherit",
+        "drawer": {
+            "children-class": "settings",
+            "transition-duration": 500,
+            "transition-left-to-right": false,
+            "click-to-reveal": true
+        },
+        "modules": [
+            "custom/settings",
+            "pulseaudio",
+            "backlight"
+        ]
+    },
+
+    "custom/settings": {
+        "format": "  ",
+        "tooltip": false,
+    },
+
+    "pulseaudio": {
+        "format": "{icon}{volume}%",
+        "format-muted": "  ",
+        "tooltip-format": "{volume}%",
+        "format-icons": {
+            "headphone": "  ",
+            "hands-free": "  ",
+            "headset": "  ",
+            "phone": "  ",
+            "phone-muted": "  ",
+            "portable": "  ",
+            "car": "  ",
+            "default": ["  ", "  ", "  "]
+        },
+        "scroll-step": 10,
+        "ignored-sinks": ["Easy Effects Sink"]
+    },
+
+    "backlight": {
+        "device": "intel_backlight",
+        "scroll-step": 10,
+        "format": "{icon}{percent}%",
+        "format-icons": [" 󰃞 ", " 󰃝 ", " 󰃟 ", " 󰃠 "],
+        "tooltip-format": "{percent}%",
+    },
+
+    "memory": {
+        "interval": 30,
+        "format": " {percentage}%",
+        "tooltip-format": " {swapPercentage}%"
+    },
+
+    "cpu": {
+        "interval": 10,
+        "format": " {usage}%",
+    },
+
+    "clock": {
+        "format": " {:%R}",
+        "tooltip-format": "{:%F}"
+    },
+
+    "custom/power": {
+        "format": " ",
+        "tooltip": false,
+        "on-click": "wlogout -b 2"
+    }
+}
