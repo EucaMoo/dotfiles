@@ -1,0 +1,106 @@
+/* Importing pywal colors */
+* {
+    font-family: "Maple Mono Normal NF";
+    font-size: 11pt;
+    font-style: italic;
+    font-weight: bold;
+	background-image: none;
+	box-shadow: none;
+}
+
+window {
+    color: #cdd6f4;
+    background-color: rgba(30, 30, 46, 0.6);
+}
+
+button {
+    background-color: rgba(100, 110, 110, 0.6);
+    outline-style: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20%;
+    box-shadow: none;
+    text-shadow: none;
+    animation: gradient_f 20s ease-in infinite;
+}
+
+button#lock {
+    border-radius: 70px 100px 30px 100px;
+    margin: 0px 2px 2px 240px;
+}
+
+button#reboot {
+    border-radius: 100px 70px 100px 30px;
+    margin: 0px 240px 2px 2px;
+}
+
+button#logout {
+    border-radius: 100px 30px 100px 70px;
+    margin: 2px 2px 0px 240px;
+}
+
+button#shutdown {
+    border-radius: 30px 100px 70px 100px;
+    margin: 2px 240px 0px 2px;
+}
+
+button:focus {
+    background-size: 30%;
+    color: #1e1e2e;
+}
+
+button:hover {
+    font-size: 12pt;
+    background-color: rgb(145, 215, 227);
+    background-size: 30%;
+    color: #1e1e2e;
+    border-radius: 50px;
+}
+
+#lock {
+    background-image: image(url("./icons/lock.png"));
+}
+
+#lock:hover {
+    background-image: image(url("./icons/lock-hover.png"));
+}
+
+#lock:focus {
+    background-image: image(url("./icons/lock-hover.png"));
+}
+
+#logout {
+    background-image: image(url("./icons/logout.png"));
+}
+
+#logout:hover {
+    background-image: image(url("./icons/logout-hover.png"));
+}
+
+#logout:focus {
+    background-image: image(url("./icons/logout-hover.png"));
+}
+
+#shutdown {
+    background-image: image(url("./icons/shtudown.png"));
+}
+
+#shutdown:hover {
+    background-image: image( url("./icons/shtudown-hover.png"));
+}
+
+#shutdown:focus {
+    background-image: image( url("./icons/shtudown-hover.png"));
+}
+
+#reboot {
+    background-image: image(url("./icons/reboot.png"));
+}
+
+#reboot:hover {
+    background-image: image(url("./icons/reboot-hover.png"));
+}
+
+#reboot:focus {
+    background-image: image(url("./icons/reboot-hover.png"));
+}

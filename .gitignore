@@ -1,0 +1,5 @@
+.config/mpd/database
+.config/mpd/sticker.sql
+.config/nvim/lazy-lock.json
+.config/yazi/flavors/catppuccin-mocha.yazi
+.config/yazi/plugins
