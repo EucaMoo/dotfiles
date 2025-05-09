@@ -8,5 +8,5 @@ fi
 swaync &
 
 # 发送命令打开通知面板
-sleep 1
+sleep 0.5
 swaync-client -t -sw

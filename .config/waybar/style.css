@@ -1,119 +1,71 @@
-@import "beimo.css";
+@define-color   text        rgba(240, 255, 255, 0.9);
+@define-color   text-dack   rgba(0, 0 , 0, 0.9);
 
 * {
-    font-family: "Font Awesome", "Maple Mono Normal NF", sans-serif;
-    font-size: 13px;
-    padding: 0px;
+    font-family: "Maple Mono Normal NF", "寒蝉半圆体", "Font Awesome 6 Free Solid";
 }
 
 #waybar {
+    color: @text;
     background: transparent;
 }
 
-.modules-left,
-.modules-center,
-.modules-right {
-    background-color: @bg;
-    border: 2px solid @border;
-    border-radius: 1rem;
+tooltip {
+    background-color: #2e3440;
+    border: 1px solid #ff0000;
+    border-radius: 5px;
 }
 
-.modules-left {
-    border-top-color: @border-left;
-    box-shadow: 0 0 6px @border-left;
+#workspaces {
+    background-color: rgba(13, 38, 48, 0.85);
+    border-radius: 1rem;
+    border: 1px solid rgba(156, 177 , 170, 0.9);
     padding: 0px 10px;
 }
-
-.modules-center {
-    border-top-color: @border-center;
-    box-shadow: 0 0 6px @border-center;
-    padding: 0px 10px 3px;
-}
-
-.modules-right {
-    border-top-color: @border-right;
-    box-shadow: 0 0 6px @border-right;
-    padding: 0px 10px 3px;
-}
-
-
 #workspaces button {
-    color: @text;
-    border-radius: 1rem;
-    padding: 0px 8px;
-    transition: padding 0.5s ease-in-out;
+    color: rgba(169, 103 , 195, 0.9);
 }
 
 #workspaces button.active {
-    font-weight: bold;
-    border-bottom-style: solid;
-    border-bottom-width: 2px;
-    border-bottom-color: @border-center;
-    color: @border-center;
-    padding: 0px 20px;
-    border-radius: 5px;
+    color: rgba(162, 218, 247, 0.9);
+}
+
+#workspaces button.urgent {
+    color: rgba(230, 205, 44, 0.9);
 }
 
 #workspaces button:hover {
     box-shadow: inherit;
     text-shadow: inherit;
-    border-radius: 4px;
-    border-color: @bg;
-    color: @border-center;
     background: transparent;
+    border-color: transparent;
 }
 
-#info,
-#tools,
-#settings,
-#memory,
-#cpu,
 #clock {
-    color: @text;
-    background: transparent;
+    color: @text-dack;
+    background-color: rgba(141, 181, 226, 0.9);
+    border-radius: 1rem;
+    padding: 0px 10px;
+}
+
+#tray {
+    border-radius: 1rem;
+    border: 1px solid rgba(156, 177 , 170, 0.9);
+    padding: 0px 10px;
+}
+
+#tools {
+    border-radius: 1rem;
+    border: 1px solid rgba(156, 177 , 170, 0.9);
+    padding: 0px 10px;
+}
+
+#hardware {
+}
+
+#network {
     border-bottom-style: solid;
-    border-bottom-width: 1px;
-}
-
-#info {
-    border-bottom-color: @right-info;
-    padding: 0px 0px 0px 2px;
-}
-
-#network.disabled {
-    border-bottom-color: #ff0000;
-}
-
-#network.disconnected {
-    border-bottom-color: #ffff00;
-}
-
-#tools{
-    border-bottom-color: @right-tools;
-    padding: 0px 2px;
-}
-
-#settings{
-    border-bottom-color: @right-settings;
-    padding: 0px 4px 0px 0px;
-}
-
-#memory {
-    border-bottom-color: @right-memory;
+    border-color: rgba(174, 218, 60, 0.9);
+    border-width: 1px;
     padding: 0px 5px;
-}
-
-#cpu {
-    border-bottom-color: @right-cpu;
-    padding: 0px 5px;
-}
-
-#clock {
-    border-bottom-color: @right-clock;
-    padding: 0px 5px;
-}
-
-#custom-power {
-    color: @text;
-    background: transparent;
 }
