@@ -19,13 +19,11 @@ return {
     },
 
     cmdline = {
+      enabled = true,
       completion = {
-        menu = { auto_show = true },
+        menu = { auto_show = false },
         ghost_text = { enabled = true },
       },
-      -- keymap = {
-      --   ["<CR>"] = { "accept", "fallback" },
-      -- },
     },
 
     enabled = function()
@@ -53,7 +51,7 @@ return {
         range = "full"
       },
       list = {
-        selection = { preselect = false, auto_insert = false }
+        selection = { preselect = false, auto_insert = true }
       },
       ghost_text = {
         enabled = true,

@@ -1,8 +1,9 @@
-@define-color   text        rgba(240, 255, 255, 0.9);
-@define-color   text-dack   rgba(0, 0 , 0, 0.9);
+@import "beimo.css";
 
 * {
     font-family: "Maple Mono Normal NF", "寒蝉半圆体", "Font Awesome 6 Free Solid";
+    border: none;
+    border-radius: 0px;
 }
 
 #waybar {
@@ -11,61 +12,67 @@
 }
 
 tooltip {
-    background-color: #2e3440;
-    border: 1px solid #ff0000;
-    border-radius: 5px;
+    border-radius: 1rem;
 }
 
 #workspaces {
-    background-color: rgba(13, 38, 48, 0.85);
+    background-color: @color1;
     border-radius: 1rem;
-    border: 1px solid rgba(156, 177 , 170, 0.9);
-    padding: 0px 10px;
+    padding: 3px 1px;
 }
+
 #workspaces button {
-    color: rgba(169, 103 , 195, 0.9);
+    background-color: rgba(144, 159, 170, 0.7);
+    border-radius: 1rem;
+    padding: 0px 3px 0px 0px;
+    margin: 0px 2px;
+    transition: all 0.5s ease-in-out;
 }
 
 #workspaces button.active {
-    color: rgba(162, 218, 247, 0.9);
+    background-color: rgba(62, 78, 91, 0.7);
+    padding: 0px 23px 0px 20px;
+    transition: all 0.5s ease-in-out;
 }
 
 #workspaces button.urgent {
-    color: rgba(230, 205, 44, 0.9);
+    background-color: rgba(230, 205, 44, 0.9);
 }
 
 #workspaces button:hover {
     box-shadow: inherit;
     text-shadow: inherit;
-    background: transparent;
-    border-color: transparent;
 }
 
 #clock {
     color: @text-dack;
-    background-color: rgba(141, 181, 226, 0.9);
+    font-weight: bold;
+    background-color: @color1;
     border-radius: 1rem;
-    padding: 0px 10px;
+    padding: 0px 8px;
 }
 
 #tray {
+    border: 1px solid @color1;
+    background-color: @bg;
     border-radius: 1rem;
-    border: 1px solid rgba(156, 177 , 170, 0.9);
     padding: 0px 10px;
 }
 
 #tools {
+    border: 2px solid @color1;
+    background-color: @bg;
     border-radius: 1rem;
-    border: 1px solid rgba(156, 177 , 170, 0.9);
     padding: 0px 10px;
 }
 
 #hardware {
+    min-width: 80px;
 }
 
 #network {
     border-bottom-style: solid;
     border-color: rgba(174, 218, 60, 0.9);
     border-width: 1px;
-    padding: 0px 5px;
+    min-width: 70px;
 }

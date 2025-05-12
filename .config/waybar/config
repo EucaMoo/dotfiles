@@ -9,32 +9,30 @@
     "margin-right": 20,
 
     "modules-left": [
-        "hyprland/workspaces",
         "tray"
     ],
 
     "modules-center": [
-        "clock"
+        "hyprland/workspaces"
     ],
 
     "modules-right": [
+        "temperature",
         "network",
         "group/hardware",
-        "group/tools"
+        "group/tools",
+        "clock"
     ],
 
     "hyprland/workspaces": {
         "format": "{icon}",
-        "on-click": "activate",
-        "all-outputs": true,
-        "sort-by-number": true,
         "format-icons": {
-            "urgent": " 󰀨 ",
-            "active": " 󰮯 ",
-            "default": "  "
+            "urgent": "󰀨",
+            "active": "",
+            "default": " "
         },
         "persistent-workspaces": {
-            "*": 3
+            "*": 2
         }
     },
 
@@ -45,7 +43,7 @@
 
     "clock": {
         "interval": 1,
-        "format": " {:L%H:%M:%S}",
+        "format": "{:L%H:%M:%S}",
         "tooltip-format": "{:%d/%m/%Y}"
     },
 
@@ -60,6 +58,12 @@
         "tooltip-format-wifi": "{essid} ({signalStrength}%)  ",
         "tooltip-format-ethernet": "{ipaddr}",
         "tooltip-format-disconnected": "Disconnected"
+    },
+
+     "temperature": {
+        "thermal-zone": 5,
+        "critical-threshold": 80,
+        "format": "{temperatureC}°C "
     },
 
     "group/hardware": {
@@ -94,9 +98,16 @@
 		"orientation": "horizontal",
 		"modules": [
             "custom/hyprpicker",
+            "custom/beimo",
             "custom/swaync"
 		]
 	},
+
+    "custom/beimo": {
+        "format": "  ",
+        "tooltip": false,
+        "on-click": ""
+    },
 
     "custom/hyprpicker": {
         "format": "  ",
