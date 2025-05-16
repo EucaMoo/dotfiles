@@ -29,7 +29,7 @@
         "format-icons": {
             "urgent": "󰀨",
             "active": "",
-            "default": " "
+            "default": ""
         },
         "persistent-workspaces": {
             "*": 2

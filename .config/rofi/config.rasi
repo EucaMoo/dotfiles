@@ -18,7 +18,7 @@ configuration {
     urgent:         #F28FADFF;
 }
 * {
-    font: "Maple Mono NF CN Bold 10";
+    font: "Maple Mono Normal NF CN Bold 10";
 }
 
 * {

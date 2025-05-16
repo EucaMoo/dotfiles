@@ -1,7 +1,7 @@
 @import "beimo.css";
 
 * {
-    font-family: "Maple Mono Normal NF", "寒蝉半圆体", "Font Awesome 6 Free Solid";
+    font-family: "Maple Mono Normal NF", "寒蝉半圆体", "Font Awesome 6 Free";
     border: none;
     border-radius: 0px;
 }
@@ -36,7 +36,7 @@ tooltip {
 }
 
 #workspaces button.urgent {
-    background-color: rgba(230, 205, 44, 0.9);
+    color: rgba(33, 33, 33, 0.9);
 }
 
 #workspaces button:hover {

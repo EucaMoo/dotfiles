@@ -1,0 +1,33 @@
+2025-05-16T05:02:11 exception: Failed to read from file: Is a directory
+2025-05-16T05:04:19 exception: Failed to commit /home/beimo/.config/mpd/state: File exists
+2025-05-16T05:05:22 player: played "INSIDE-DUSTCELL.mp3"
+2025-05-16T05:07:22 exception: Failed to commit /home/beimo/.config/mpd/state: File exists
+2025-05-16T05:09:31 player: played "越来越不懂-蔡健雅.mp3"
+2025-05-16T05:11:32 exception: Failed to commit /home/beimo/.config/mpd/state: File exists
+2025-05-16T05:12:45 player: played "依然爱你-yihuik苡慧.mp3"
+2025-05-16T05:14:45 exception: Failed to commit /home/beimo/.config/mpd/state: File exists
+2025-05-16T05:55:12 exception: Failed to commit /home/beimo/.config/mpd/state: File exists
+2025-05-16T05:56:08 player: played "INSIDE-DUSTCELL.mp3"
+2025-05-16T05:58:08 exception: Failed to commit /home/beimo/.config/mpd/state: File exists
+2025-05-16T05:58:59 update: removing 颓-九块钱,99PERCENT.mp3
+2025-05-16T06:00:32 exception: Failed to commit /home/beimo/.config/mpd/state: File exists
+2025-05-16T06:01:47 update: removing 妥协-蔡依林.mp3
+2025-05-16T06:02:33 exception: Failed to commit /home/beimo/.config/mpd/state: File exists
+2025-05-16T06:05:17 player: played "INSIDE-DUSTCELL.mp3"
+2025-05-16T06:06:10 exception: Failed to commit /home/beimo/.config/mpd/state: File exists
+2025-05-16T06:07:32 player: played "INSIDE-DUSTCELL.mp3"
+2025-05-16T06:08:46 exception: Failed to commit /home/beimo/.config/mpd/state: File exists
+2025-05-16T06:10:35 player: played "INSIDE-DUSTCELL.mp3"
+2025-05-16T06:10:39 player: played "Caffeine-DUSTCELL.mp3"
+2025-05-16T06:12:28 exception: Access to local files via TCP is not allowed
+2025-05-16T06:12:35 exception: Failed to commit /home/beimo/.config/mpd/state: File exists
+2025-05-16T06:14:36 exception: Failed to commit /home/beimo/.config/mpd/state: File exists
+2025-05-16T06:16:13 player: played "albino-DUSTCELL.mp3"
+2025-05-16T06:18:13 exception: Failed to commit /home/beimo/.config/mpd/state: File exists
+2025-05-16T06:18:33 player: played "albino-DUSTCELL.mp3"
+2025-05-16T06:20:33 exception: Failed to commit /home/beimo/.config/mpd/state: File exists
+2025-05-16T06:22:05 player: played "albino-DUSTCELL.mp3"
+2025-05-16T06:24:05 exception: Failed to commit /home/beimo/.config/mpd/state: File exists
+2025-05-16T06:25:11 player: played "Caffeine-DUSTCELL.mp3"
+2025-05-16T06:27:11 exception: Failed to commit /home/beimo/.config/mpd/state: File exists
+2025-05-16T06:28:13 player: played "麦恩莉-方大同.mp3"

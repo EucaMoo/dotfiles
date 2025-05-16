@@ -2,7 +2,7 @@
     "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
     "logo": {
         "type": "auto",
-        "source": "$(find \"${XDG_CONFIG_HOME:-$HOME/dotfiles}/fastfetch/images/\" -name \"*.txt\" -o -name \"*.png\" | sort -R | head -1)",
+        "source": "$(find \"${XDG_CONFIG_HOME:-$HOME/dotfiles}/.config/fastfetch/images/\" -name \"*.txt\" | sort -R | head -1)",
         "height": 18
     },
     "display": {
@@ -36,10 +36,6 @@
             "type": "shell"
         },
         {
-            "key": "│ {#36}  WM       {#keys}│",
-            "type": "wm"
-        },
-        {
             "key": "│ {#31}{icon}  Machine  {#keys}│",
             "type": "host",
             "format": "{name}{?vendor} ({vendor}){?}"
@@ -48,6 +44,10 @@
             "key": "├─────────────┤",
             "type": "custom",
             "format": ""
+        },
+        {
+            "key": "│ {#36}  WM       {#keys}│",
+            "type": "wm"
         },
         {
             "key": "│ {#32}  CPU      {#keys}│",
@@ -70,10 +70,6 @@
             "key": "│ {#36}󰩟  Network  {#keys}│",
             "type": "localip",
             "format": "{ipv4} ({ifname})"
-        },
-        {
-            "key": "│ {#31}󰀘  PublicIp {#keys}│",
-            "type": "publicip"
         },
         {
             "key": "├─────────────┤",
